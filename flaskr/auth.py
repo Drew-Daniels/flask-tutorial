@@ -9,6 +9,7 @@ from flaskr.db import get_db
 
 bp = Blueprint('auth', __name__)
 
+
 @bp.route('/register', methods=('GET', 'POST'))
 def register():
     if request.method == 'POST':
